@@ -1,0 +1,279 @@
+:root{
+    /* colors */
+    --black: black; 
+    --white: white;
+    --yellow: #FFD77F;
+    --blue: #7FD7FF;
+    --grey: #333333;
+    box-sizing: border-box;
+}
+
+*, ::before, ::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(photos/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 10px;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: var(--yellow);
+}
+
+.header{
+    align-items: center;
+    background-color: var(--black);
+    display: flex;
+    font-family: 'Cookie', cursive;
+    font-size: 2.5rem;
+    height: auto;
+    justify-content:space-between;
+    margin: 2rem auto 0;
+}
+.conteiner{
+    width: 90%;
+    margin: auto;
+}
+.navbar ul{
+    
+    display: flex;
+    list-style: none;
+    margin: 0 2rem;
+    
+}
+.navbar ul li{
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+
+.logo img{
+    margin:1.3rem 2rem 1rem;
+    width: 5rem;
+    transform: rotateY(180deg);
+}
+
+.slider-box{
+    background-color: var(--black);
+    display: flex;
+    min-height: 300px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.slider-half-items{
+    color: var(--white);
+    font-family: cursive, Geneva,sans-serif;
+    padding: 1rem 3rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    justify-content: center;
+    padding: 2rem;
+}
+.button{
+    margin: 1rem;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+.order-button{
+    color: var(--blue);
+    border: 3px solid var(--blue);
+    text-align: center;
+}
+
+.book-button{
+    color: var(--yellow);
+    border: 3px solid var(--yellow);
+}
+
+.order-button:hover, .book-button:hover{
+    background-color: var(--grey);
+    cursor: pointer;
+}
+.slider-half-photo{
+    background-image: url(photos/pizza.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 50%;
+}
+
+.advantages-boxes{
+    display: flex;
+}
+
+.box{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--black);
+    color: var(--white);
+    height: 250px;
+    margin: 2rem;
+    width: 33.33%;
+}
+
+.box span{    
+    align-items: end;
+    display: flex;
+    font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 180px;
+    justify-content: end;
+    letter-spacing: 0.1rem;
+    padding: 0 2rem 0 0;
+    text-align: center;
+    
+}
+
+.best-inredients{
+    background-image:url(photos/olive.jpg);
+
+}
+
+.original-recipe{
+    background-image:url(photos/book.jpg);
+
+}
+
+.fast-delivery{
+    background-image:url(photos/motors.jpg);
+
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+    gap: 1.5rem;
+}
+
+.pizza-box{
+    font-size: 1.6rem;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.pizza-img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;;
+    width: 100%;
+}
+
+.peperoni{
+    background-image:url(photos/pizza-peperoni.png);
+}
+
+.capriciosa{
+    background-image:url(photos/pizza-capriociosa.png);
+}
+
+.hawai{
+    background-image:url(photos/pizza-hawajska.png);
+}
+
+.vege{
+    background-image:url(photos/pizza-vege.jpeg);
+}
+
+.cheese{
+    background-image:url(photos/pizza-serowa.png);
+}
+
+.vesuvio{
+    background-image:url(photos/pizza-vesuvio.jpg);
+}
+.pizza-name{
+    font-family: 'Cookie', cursive;
+    font-size: 2.5rem;
+    margin: 2rem 0 0.5rem 2rem;
+}
+
+.pizza-desc{
+    margin: 0 0 3rem 2rem;
+}
+
+.pizza-price{
+    margin: 0 0 3rem 2rem;
+    font-style: italic;
+    font-size: 3rem;
+} 
+
+.plus-icon{
+    background-color: #FFD77F;
+    border-radius: 5rem;
+    color: var(--black);
+    font-weight: bolder;
+    margin-left: 3rem;
+    padding: 0.5rem 1.3rem;
+}
+
+.plus-icon:hover{
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--black);
+    margin-top: 3rem;
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer div{
+    padding: 3rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .slider-box{
+        flex-direction: column;       
+    }
+    .slider-half-photo img{
+        justify-content: center;
+        margin: auto;
+    }
+    .menu-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .menu-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .advantages-boxes{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
