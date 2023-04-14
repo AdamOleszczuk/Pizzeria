@@ -9,16 +9,18 @@
     <title>Pizzeria</title>
 </head>
 <body>
-    <header class="header conteiner">
-        <div class="logo">
-            <img width = 50px src="photos/pizza-triangle.png" alt="logo">
+    <header class="header">
+        <div class="conteiner header">
+            <div class="logo">
+                <a href="#"><img width = 50px src="photos/pizza-triangle.png" alt="logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#delivery">Zamów</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section class="slider-box conteiner">
@@ -37,73 +39,121 @@
                 <div class="box original-recipe"><span>Oryginalna<br>receptura</span></div>
                 <div class="box fast-delivery"><span>Szybka<br>dostawa</span></div>
         </section>
-        <section id="menu" class="menu-grid conteiner" >
-            <div class="pizza-box">
-                <div class="pizza-img peperoni"></div>
-                <div class="pizza-info">
-                    <div class = "pizza-name">Peperoni</div>
-                    <div class = "pizza-desc">peperoni, cebula, 2x ser, sos pomodorowy</div>
-                    <div class = "pizza-price">39,99 zł
-                        <span class="plus-icon">></span>
-                    </div> 
-                </div> 
+        <section class="conteiner">
+            <div class="heading">
+                <h2>Menu</h2>
             </div>
-
-            <div class="pizza-box">
-                <div class="pizza-img capriciosa"></div>
-                <div class="pizza-info">
-                    <div class = "pizza-name">Capriciosa</div>
-                    <div class = "pizza-desc">szynka, pieczarki, 2x ser, sos pomidorowy</div>
-                    <div class = "pizza-price">42,99 zł
-                        <span class="plus-icon">></span>
+            <div id="menu" class="menu-grid" >
+                <div class="pizza-box">
+                    <div class="pizza-img peperoni"></div>
+                    <div class="pizza-info">
+                        <div class = "pizza-name">Peperoni</div>
+                        <div class = "pizza-desc">peperoni, cebula, 2x ser, sos pomodorowy</div>
+                        <div class = "pizza-price">39,99 zł
+                            <span class="plus-icon">></span>
+                        </div> 
                     </div> 
-                </div> 
-            </div>
+                </div>
 
-            <div class="pizza-box">
-                <div class="pizza-img hawai"></div>
-                <div class="pizza-info">
-                    <div class = "pizza-name">Hawajska</div>
-                    <div class = "pizza-desc">szynka, ananas, 2x ser, sos pomidorowy</div>
-                    <div class = "pizza-price">44,99 zł
-                        <span class="plus-icon">></span>
+                <div class="pizza-box">
+                    <div class="pizza-img capriciosa"></div>
+                    <div class="pizza-info">
+                        <div class = "pizza-name">Capriciosa</div>
+                        <div class = "pizza-desc">szynka, pieczarki, 2x ser, sos pomidorowy</div>
+                        <div class = "pizza-price">42,99 zł
+                            <span class="plus-icon">></span>
+                        </div> 
                     </div> 
-                </div> 
-            </div>
+                </div>
 
-            <div class="pizza-box">
-                <div class="pizza-img vesuvio"></div>
-                <div class="pizza-info">
-                    <div class = "pizza-name">Vesuvio</div>
-                    <div class = "pizza-desc">2x ser, sos pomidorowy, szynka</div>
-                    <div class = "pizza-price">45,99 zł
-                        <span class="plus-icon">></span>
+                <div class="pizza-box">
+                    <div class="pizza-img hawai"></div>
+                    <div class="pizza-info">
+                        <div class = "pizza-name">Hawajska</div>
+                        <div class = "pizza-desc">szynka, ananas, 2x ser, sos pomidorowy</div>
+                        <div class = "pizza-price">44,99 zł
+                            <span class="plus-icon">></span>
+                        </div> 
                     </div> 
-                </div> 
-            </div>
+                </div>
 
-            <div class="pizza-box">
-                <div class="pizza-img cheese"></div>
-                <div class="pizza-info">
-                    <div class = "pizza-name">Serowa</div>
-                    <div class = "pizza-desc">2x ser, sos pomidorowy</div>
-                    <div class = "pizza-price">38,99 zł
-                        <span class="plus-icon">></span>
+                <div class="pizza-box">
+                    <div class="pizza-img vesuvio"></div>
+                    <div class="pizza-info">
+                        <div class = "pizza-name">Vesuvio</div>
+                        <div class = "pizza-desc">2x ser, sos pomidorowy, szynka</div>
+                        <div class = "pizza-price">45,99 zł
+                            <span class="plus-icon">></span>
+                        </div> 
                     </div> 
-                </div> 
-            </div>
+                </div>
 
-            <div class="pizza-box">
-                <div class="pizza-img vege"></div>
-                <div class="pizza-info">
-                    <div class = "pizza-name">Wege</div>
-                    <div class = "pizza-desc">cebula, pieczarki, papryka, oliwki, 2x ser, sos pomidorowy</div>
-                    <div class = "pizza-price">37,99 zł
-                        <span class="plus-icon">></span>
+                <div class="pizza-box">
+                    <div class="pizza-img cheese"></div>
+                    <div class="pizza-info">
+                        <div class = "pizza-name">Serowa</div>
+                        <div class = "pizza-desc">2x ser, sos pomidorowy</div>
+                        <div class = "pizza-price">38,99 zł
+                            <span class="plus-icon">></span>
+                        </div> 
                     </div> 
-                </div> 
+                </div>
+
+                <div class="pizza-box">
+                    <div class="pizza-img vege"></div>
+                    <div class="pizza-info">
+                        <div class = "pizza-name">Wege</div>
+                        <div class = "pizza-desc">cebula, pieczarki, papryka, oliwki, 2x ser, sos pomidorowy</div>
+                        <div class = "pizza-price">37,99 zł
+                            <span class="plus-icon">></span>
+                        </div> 
+                    </div> 
+                </div>
             </div>
         </section>    
+        <section class="order conteiner">
+            <div id="delivery"class="heading">
+                <h2>Zamów z dostawa</h2>
+            </div>
+            <div class="form-conteiner"> 
+                <form action="">
+                    <select name="choose-pizza" id="">
+                        <option value="" selected><b>--Wybierz pizze--</b></option>
+                        <option value="">Peperoni</option>
+                        <option value="">Capriciosa</option>
+                        <option value="">Hawajska</option>
+                        <option value="">Vesuvio</option>
+                        <option value="">Serowa</option>
+                        <option value="">Wege</option>
+                    </select>
+
+                    <div>
+                        <label for="street">Ulica</label> <br>
+                        <input type="text" id="street" required>
+                    </div>
+
+                    <div>
+                        <label for="house-number">Numer domu/mieszkania</label> <br>
+                        <input type="text" id="house-number" required>
+                    </div>
+
+                    <div>
+                        <label for="city">Miasto</label> <br>
+                        <input type="text" id="city" required>
+                    </div>
+                    <div>
+                        <label for="infoForPizzaMan">Wiadomość dla dostawdcy</label> <br>
+                        <textarea name="" id="infoForPizzaMan" cols="20" rows="5"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Zamów</button>
+                    </div>
+                </form>
+            </div>
+
+            </form>
+        </section>
     </main>
 
     <footer>
