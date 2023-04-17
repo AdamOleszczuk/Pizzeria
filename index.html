@@ -27,8 +27,8 @@
             <div class="slider-half-items">
                 <h1>Najlepsza pizza w mieście</h1><hr>
                     <div class = "buttons">
-                        <div class="button order-button">Zamów z dostawą</div> 
-                        <div class="button book-button">Rezerwacja</div> 
+                        <div class="button order-button"><a href="#delivery">Zamów z dostawą</a></div> 
+                        <div class="button book-button"><a href="#reservation">Rezerwacja</a></div> 
                     </div>
             </div>
             <div class="slider-half-photo"></div>
@@ -50,7 +50,7 @@
                         <div class = "pizza-name">Peperoni</div>
                         <div class = "pizza-desc">peperoni, cebula, 2x ser, sos pomodorowy</div>
                         <div class = "pizza-price">39,99 zł
-                            <span class="plus-icon">></span>
+                            <span><a href="#delivery" class="plus-icon">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -61,7 +61,7 @@
                         <div class = "pizza-name">Capriciosa</div>
                         <div class = "pizza-desc">szynka, pieczarki, 2x ser, sos pomidorowy</div>
                         <div class = "pizza-price">42,99 zł
-                            <span class="plus-icon">></span>
+                            <span><a href="#delivery" class="plus-icon">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -72,7 +72,7 @@
                         <div class = "pizza-name">Hawajska</div>
                         <div class = "pizza-desc">szynka, ananas, 2x ser, sos pomidorowy</div>
                         <div class = "pizza-price">44,99 zł
-                            <span class="plus-icon">></span>
+                            <span><a href="#delivery" class="plus-icon">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -83,7 +83,7 @@
                         <div class = "pizza-name">Vesuvio</div>
                         <div class = "pizza-desc">2x ser, sos pomidorowy, szynka</div>
                         <div class = "pizza-price">45,99 zł
-                            <span class="plus-icon">></span>
+                            <span><a href="#delivery" class="plus-icon">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -94,7 +94,7 @@
                         <div class = "pizza-name">Serowa</div>
                         <div class = "pizza-desc">2x ser, sos pomidorowy</div>
                         <div class = "pizza-price">38,99 zł
-                            <span class="plus-icon">></span>
+                            <span><a href="#delivery" class="plus-icon">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -105,54 +105,112 @@
                         <div class = "pizza-name">Wege</div>
                         <div class = "pizza-desc">cebula, pieczarki, papryka, oliwki, 2x ser, sos pomidorowy</div>
                         <div class = "pizza-price">37,99 zł
-                            <span class="plus-icon">></span>
+                            <span><a href="#delivery" class="plus-icon">></a></span>
                         </div> 
                     </div> 
                 </div>
             </div>
-        </section>    
-        <section class="order conteiner">
-            <div id="delivery"class="heading">
-                <h2>Zamów z dostawa</h2>
-            </div>
-            <div class="form-conteiner"> 
-                <form action="">
-                    <select name="choose-pizza" id="">
-                        <option value="" selected><b>--Wybierz pizze--</b></option>
-                        <option value="">Peperoni</option>
-                        <option value="">Capriciosa</option>
-                        <option value="">Hawajska</option>
-                        <option value="">Vesuvio</option>
-                        <option value="">Serowa</option>
-                        <option value="">Wege</option>
-                    </select>
+        </section>   
+        <section class="conteiner forms"> 
+            <div class="half-conteiner">
+                <div id="delivery"class="heading">
+                    <h2>Zamów z dostawa</h2>
+                </div>
+                <div class="form-conteiner"> 
+                    <form action="">
+                        <select name="choose-pizza" id="">
+                            <option value="" selected><b>--Wybierz pizze--</b></option>
+                            <option value="">Peperoni</option>
+                            <option value="">Capriciosa</option>
+                            <option value="">Hawajska</option>
+                            <option value="">Vesuvio</option>
+                            <option value="">Serowa</option>
+                            <option value="">Wege</option>
+                        </select>
 
-                    <div>
-                        <label for="street">Ulica</label> <br>
-                        <input type="text" id="street" required>
-                    </div>
+                        <div>
+                            <label for="street">Ulica</label> <br>
+                            <input type="text" id="street" required>
+                        </div>
 
-                    <div>
-                        <label for="house-number">Numer domu/mieszkania</label> <br>
-                        <input type="text" id="house-number" required>
-                    </div>
+                        <div>
+                            <label for="house-number">Numer domu/mieszkania</label> <br>
+                            <input type="text" id="house-number" required>
+                        </div>
 
-                    <div>
-                        <label for="city">Miasto</label> <br>
-                        <input type="text" id="city" required>
-                    </div>
-                    <div>
-                        <label for="infoForPizzaMan">Wiadomość dla dostawdcy</label> <br>
-                        <textarea name="" id="infoForPizzaMan" cols="20" rows="5"></textarea>
-                    </div>
+                        <div>
+                            <label for="city">Miasto</label> <br>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div>
+                            <label for="infoForPizzaMan">Wiadomość dla dostawdcy</label> <br>
+                            <textarea name="" id="infoForPizzaMan" cols="20" rows="5"></textarea>
+                        </div>
 
-                    <div>
-                        <button type="submit">Zamów</button>
-                    </div>
+                        <div>
+                            <button type="submit">Zamów</button>
+                        </div>
+                    </form>
+                </div>
+
                 </form>
             </div>
 
-            </form>
+            <div class="half-conteiner">
+                <div id="reservation"class="heading">
+                    <h2>Rezerwacja</h2>
+                </div>
+                <div class="form-conteiner"> 
+                    <form action="">
+                        <div>
+                            <label for="surname">Nazwisko</label> <br>
+                            <input type="text" id="surname" required>
+                        </div>
+
+                        <div>
+                            <label for="name">Imię</label> <br>
+                            <input type="text" id="name" required>
+                        </div>
+
+                        <div>
+                            <label for="date">Wybierz datę</label> <br>
+                            <input type="date" id="date" required>
+                        </div>
+
+                        <div>
+                            <label for="time">Wybierz godzinę</label> <br>
+                            <input type="time" id="time" min="09:00" max="21:00" required>
+                        </div>
+
+                        <div>
+                            <label for="infoForPizzaMan">Dodatkowa wiadomość</label> <br>
+                            <textarea name="" id="infoForPizzaMan" cols="20" rows="5"></textarea>
+                        </div>
+
+                        <div>
+                            <button class="reservation-button" type="submit">Rezerwuj</button>
+                        </div>
+                    </form>
+                </div>
+
+                </form>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="conteiner">
+                <div class="heading">
+                    <h2>Kontakt</h2>
+                </div>
+                <div class="contact-info">
+                    <ul>
+                        <li>Telefon</li>
+                        <li>Adres</li>
+                        <li>Emial</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
     </main>
 

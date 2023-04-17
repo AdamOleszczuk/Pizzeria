@@ -239,6 +239,10 @@ h1{
     cursor: pointer;
 }
 
+.half-conteiner{
+    width: 45%;
+}
+
 .heading{
     background-color: var(--black);
     border-radius: 1.5rem;
@@ -290,11 +294,20 @@ input:focus, button:focus, select:focus, textarea:focus{
     box-shadow: 0 0.2rem 0.8rem var(--blue);
 }
 
+.forms{
+    display: flex;
+    justify-content: space-around;
+}
+
 button{
     background-color: var(--blue);
     cursor: pointer;
     font-weight: bold;
     padding: 0.8rem 3rem;
+}
+
+.reservation-button{
+    background-color: var(--yellow);
 }
 
 footer{
@@ -313,12 +326,22 @@ footer div{
     .slider-box{
         flex-direction: column;       
     }
+
     .slider-half-photo img{
         justify-content: center;
         margin: auto;
     }
+
     .menu-grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .forms{
+        flex-direction: column;
+    }
+
+    .half-conteiner{
+        width: 100%;
     }
 }
 
@@ -330,9 +353,10 @@ footer div{
     .advantages-boxes{
         flex-direction: column;
     }
+
     .box{
-        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
     }
 }
