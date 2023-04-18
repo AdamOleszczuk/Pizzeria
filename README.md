@@ -1,1 +1,1 @@
-Prosta strona pizzerii utworzona przy wykorzystaniu HTML i CSS
+Strona Pizzeri stworona przy wykorzytniu HTML, CSS oraz JavaScript.
