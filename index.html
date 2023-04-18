@@ -17,7 +17,7 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#menu">Menu</a></li>
-                    <li><a href="#delivery">Zamów</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,7 +50,7 @@
                         <div class = "pizza-name">Peperoni</div>
                         <div class = "pizza-desc">peperoni, cebula, 2x ser, sos pomodorowy</div>
                         <div class = "pizza-price">39,99 zł
-                            <span><a href="#delivery" class="plus-icon">></a></span>
+                            <span><a href="#delivery" data-pizza="Peperoni" class="plus-icon btn-pizza">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -61,7 +61,7 @@
                         <div class = "pizza-name">Capriciosa</div>
                         <div class = "pizza-desc">szynka, pieczarki, 2x ser, sos pomidorowy</div>
                         <div class = "pizza-price">42,99 zł
-                            <span><a href="#delivery" class="plus-icon">></a></span>
+                            <span><a href="#delivery" data-pizza="Capriciosa" class="plus-icon btn-pizza">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -72,7 +72,7 @@
                         <div class = "pizza-name">Hawajska</div>
                         <div class = "pizza-desc">szynka, ananas, 2x ser, sos pomidorowy</div>
                         <div class = "pizza-price">44,99 zł
-                            <span><a href="#delivery" class="plus-icon">></a></span>
+                            <span><a href="#delivery" data-pizza="Hawajska" class="plus-icon btn-pizza">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -83,7 +83,7 @@
                         <div class = "pizza-name">Vesuvio</div>
                         <div class = "pizza-desc">2x ser, sos pomidorowy, szynka</div>
                         <div class = "pizza-price">45,99 zł
-                            <span><a href="#delivery" class="plus-icon">></a></span>
+                            <span><a href="#delivery" data-pizza="Vesuvio" class="plus-icon btn-pizza">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -94,7 +94,7 @@
                         <div class = "pizza-name">Serowa</div>
                         <div class = "pizza-desc">2x ser, sos pomidorowy</div>
                         <div class = "pizza-price">38,99 zł
-                            <span><a href="#delivery" class="plus-icon">></a></span>
+                            <span><a href="#delivery" data-pizza="Serowa" class="plus-icon btn-pizza">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -105,7 +105,7 @@
                         <div class = "pizza-name">Wege</div>
                         <div class = "pizza-desc">cebula, pieczarki, papryka, oliwki, 2x ser, sos pomidorowy</div>
                         <div class = "pizza-price">37,99 zł
-                            <span><a href="#delivery" class="plus-icon">></a></span>
+                            <span><a href="#delivery" data-pizza="Wege" class="plus-icon btn-pizza">></a></span>
                         </div> 
                     </div> 
                 </div>
@@ -118,14 +118,14 @@
                 </div>
                 <div class="form-conteiner"> 
                     <form action="">
-                        <select name="choose-pizza" id="">
+                        <select name="choose-pizza" id="choose-pizza">
                             <option value="" selected><b>--Wybierz pizze--</b></option>
-                            <option value="">Peperoni</option>
-                            <option value="">Capriciosa</option>
-                            <option value="">Hawajska</option>
-                            <option value="">Vesuvio</option>
-                            <option value="">Serowa</option>
-                            <option value="">Wege</option>
+                            <option value="Peperoni">Peperoni</option>
+                            <option value="Capriciosa">Capriciosa</option>
+                            <option value="Hawajska">Hawajska</option>
+                            <option value="Vesuvio">Vesuvio</option>
+                            <option value="Serowa">Serowa</option>
+                            <option value="Wege">Wege</option>
                         </select>
 
                         <div>
@@ -179,7 +179,8 @@
 
                         <div>
                             <label for="time">Wybierz godzinę</label> <br>
-                            <input type="time" id="time" min="09:00" max="21:00" required>
+                            <input type="time" id="time" min="09:00" max="21:00" list="godziny"required>
+                            <datalist id="godziny"></datalist>
                         </div>
 
                         <div>
@@ -203,10 +204,9 @@
                 </div>
                 <div class="contact-info">
                     <ul>
-                        <li>Telefon</li>
-                        <li>Adres</li>
-                        <li>Emial</li>
-                        <li>Facebook</li>
+                        <li>Telefon: 883454133</li>
+                        <li>Adres: Ulica Serowa 3A, Warszawa</li>
+                        <li>Emial: pizzeria-wloska@gmail.com</li>
                     </ul>
                 </div>
             </div>
@@ -217,5 +217,7 @@
     <footer>
         <div>Pizzeria 2023</div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
